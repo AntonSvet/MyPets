@@ -1,8 +1,10 @@
 import React from "react";
+import "./Articles.css"
+import {NavLink} from "react-router-dom";
 
-const Main = () => {
+const Articles = () => {
     return (
-        <div>
+        <div className="Articles">
             <div className="row mb-2">
                 <div className="col-md-6">
                     <div
@@ -12,7 +14,7 @@ const Main = () => {
                             <h3 className="mb-0">Бенгальский котенок</h3>
                             <div className="mb-1 text-muted">Окт 7</div>
                             <p className="card-text mb-auto">Бенгальский котенок — является представителем гибридной породы кошек. Почему гибридной?</p>
-                            <a href="#" className="stretched-link">Продолжить чтение</a>
+                            <NavLink to="/cats" className="stretched-link">Продолжить чтение</NavLink>
                         </div>
                         <div className="col-auto d-none d-lg-block">
                             <img  src='https://drbengali.hu/files/d/a/da04cc9725c4faf7d8b3dfeddaa8cc22_300x300_c.png'/>
@@ -28,7 +30,7 @@ const Main = () => {
                             <h3 className="mb-0">Цвергпинчер</h3>
                             <div className="mb-1 text-muted">Окт 7</div>
                             <p className="mb-auto">Цвергпинчер – миниатюрный, но весьма крепко сложенный красавец.</p>
-                            <a href="#" className="stretched-link">Продолжить чтение</a>
+                            <NavLink to="/dogs" className="stretched-link">Продолжить чтение</NavLink>
                         </div>
                         <div className="col-auto d-none d-lg-block">
                             <img  src='https://zooshef.ru/image/catalog/images/store/trixie/shirley2.jpg'/>
@@ -177,4 +179,4 @@ const Main = () => {
         </div>
     )
 }
-export default Main
+export default Articles
