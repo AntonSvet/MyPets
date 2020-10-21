@@ -1,12 +1,18 @@
 import React from "react";
-import Slider from "../Slider/SliderNew";
+
 import Articles from "../Articles";
 import Slider2 from "../Slider/Slider2";
- const HomePage = () => {
+import Comments from "./Comments";
+ const HomePage = (props) => {
     return (
         <div>
             <Slider2/>
             <Articles/>
+            <Comments comments={props.comments.messageData}
+                      addComment={props.addComment}
+                      newPostText={props.comments.newPostText}
+                      updateNewCommentText={props.updateNewCommentText}
+            />
         </div>
 
     )

@@ -3,11 +3,14 @@ import s from "./Navbar.module.css"
 import CatNav from "./Pages/Navbar/CatNav";
 import {Route} from "react-router-dom";
 import DogNav from "./Pages/Navbar/DogNav";
-const Navbar = () => {
+import Comments from "./Pages/Comments";
+const Navbar = (props) => {
     return (
         <nav className={s.nav}>
-            <Route path="/cats" component={CatNav}/>
-            <Route path="/dogs" component={DogNav}/>
+
+            <Route path="/cats" render= { () =><CatNav сatsNav={props.сatsNav}/>}/>
+            <Route path="/dogs" render={() =><DogNav dogsNav={props.dogsNav} /> }/>
+
         </nav>
     )
 }

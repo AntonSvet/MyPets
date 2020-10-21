@@ -11,15 +11,7 @@ body {
 
 }
 
-h1 {
-    padding-left: 162px;
-    font-weight: bold;
-    font-size: 38px;
-    line-height: 46px;
-    color: red;
-    margin: 0;
-    margin-bottom: 80px;
-}
+
 
 .flex-wrapper {
     width: 100%;

@@ -3,10 +3,11 @@ import "./Header.css"
 import {NavLink} from "react-router-dom";
 
 const Header = () => {
+
     return (
         <header className="header">
             <div className="title">
-                <img src='https://pbs.twimg.com/profile_images/716831733383954432/3D5OuWvy.jpg'/>
+                <img src='https://pbs.twimg.com/profile_images/716831733383954432/3D5OuWvy.jpg' alt="head"/>
                 <div className="name_site">Наш сайт поможет вам выбрать своего первого друга</div>
                 <ul>
                     <li><NavLink to="/home">Главная</NavLink></li>

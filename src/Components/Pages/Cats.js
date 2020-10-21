@@ -1,21 +1,16 @@
 import React from "react";
-import s from "./Cats.module.css"
-import Navbar from "../Navbar";
 import {NavLink} from "react-router-dom";
+
+const Cats = (props) => {
+
+
 
 const NavItem = (props) => {
     return <div><NavLink to={"/cats/" + props.id}>{props.name}</NavLink></div>
 }
-let articleData = [
-    {id:1, name: 'Кошки'},
-    {id:2, name: 'Первая статья'},
-    {id:3, name: 'Вторая статья'},
-    {id:4, name: 'Третья статья'},
-    {id:5, name: 'Четвертая стотья'}
-    ]
 
-const articleElement = articleData.map( article=> <NavItem name = {article.name} id={article.id}/>)
-const Cats = (props) => {
+const articleElement = props.articlesCats.map( article=> <NavItem name = {article.title} id={article.id}/>)
+
     return(
         <div>
             {articleElement}
