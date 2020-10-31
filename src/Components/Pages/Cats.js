@@ -3,8 +3,6 @@ import {NavLink} from "react-router-dom";
 
 const Cats = (props) => {
 
-
-
 const NavItem = (props) => {
     return <div><NavLink to={"/cats/" + props.id}>{props.name}</NavLink></div>
 }

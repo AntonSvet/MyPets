@@ -12,14 +12,15 @@ const Content = (props) => {
 
     return (
         <main className={s.content}>
-            <Route path="/home" render={() =><HomePage comments={props.comments}
-                                                       addComment={props.addComment}
-                                                       updateNewCommentText={props.updateNewCommentText}
+            <Route path="/home" render={() => <HomePage /*store={props.store}
+                                                         comments={props.comments}
+                                                       dispatch={props.dispatch}*/
+
             />}/>
-            <Route path="/dogs" render={() => <Dogs articlesDogs={props.articlesDogs} />}/>
-            <Route path="/cats" render={() => <Cats articlesCats={props.articlesCats} />}/>
-            <Route path="/birds" render={() => <Birds/>} />
-            <Route path="/fishes" render={() => <Fishes/>} />
+            <Route path="/dogs" render={() => <Dogs  articlesDogs={props.articlesDogs} />}/>
+            <Route path="/cats" render={() => <Cats  articlesCats={props.articlesCats} />}/>
+            <Route path="/birds" render={() => <Birds/>}/>
+            <Route path="/fishes" render={() => <Fishes/>}/>
 
         </main>
     )

@@ -2,8 +2,7 @@
     font-family: 'Montserrat', 'sans-serif';
 }
 html {
-    margin: 0;
-    padding: 0;
+
 }
 
 body {
@@ -14,13 +13,15 @@ main{
 }
 .app-wrapper{
     display: grid;
+    width: 100%;
     grid-template-areas:
-    "h h h"
-    "a c n"
-    "f f f";
-    grid-template-rows: 10% 4fr 10%;
-    grid-template-columns: 20% 60% 20%;
-    grid-gap: 10px;
+    "h h h h"
+    "s s s s"
+    "a c c n"
+    "f f f f";
+    grid-template-rows: 2% 1% 4fr 5%;
+    grid-template-columns: 20% 30% 30% 20%;
+    /*grid-gap: 1px; */
 }
 
 
